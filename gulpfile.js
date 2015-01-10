@@ -1,28 +1,35 @@
-var gulp = require('gulp'),
-	jshint = require('gulp-jshint'),
-	jshintReporter = require('jshint-stylish'),
-	watch = require('gulp-watch');
+'use strict';
 
-/*
- * Create variables for our project paths so we can change in one place
- */
+var gulp = require('gulp');
+var eslint = require('gulp-eslint');
+var jscs = require('gulp-jscs');
+
 var paths = {
-	'src':['./models/**/*.js','./routes/**/*.js', 'keystone.js', 'package.json']
+    rebuild: [],
+    lint: [
+        // '.enb/*.js',
+        'blocks/**/*.js',
+        'bundles/*/blocks/**/*.js',
+        'controllers/**/*.js',
+        'lib/**/*.js',
+        // 'middleware/**/*.js',
+        'models/**/*.js',
+        'updates/*.js',
+        // 'test/**/*.js',
+        '*.js'
+    ]
 };
 
-
-// gulp lint
-gulp.task('lint', function(){
-	gulp.src(paths.src)
-		.pipe(jshint())
-		.pipe(jshint.reporter(jshintReporter));
-
+gulp.task('jscs', function () {
+    return gulp.src(paths.lint)
+        .pipe(jscs());
 });
 
-// gulp watcher for lint
-gulp.task('watchLint', function () {
-	gulp.src(paths.src)
-		.pipe(watch())
-		.pipe(jshint())
-		.pipe(jshint.reporter(jshintReporter));
+gulp.task('eslint', function () {
+    return gulp.src(paths.lint)
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failOnError());
 });
+
+gulp.task('lint', ['jscs', 'eslint']);
