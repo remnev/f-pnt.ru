@@ -5,6 +5,7 @@ var eslint = require('gulp-eslint');
 var jscs = require('gulp-jscs');
 var mocha = require('gulp-mocha');
 var istanbul = require('gulp-istanbul');
+var bower = require('gulp-bower');
 
 var paths = {
     rebuild: [],
@@ -29,7 +30,8 @@ var paths = {
         // 'middleware/**/*.js',
         'models/**/*.js',
         '*.js'
-    ]
+    ],
+    vendors: 'vendors'
 };
 
 // Lint
@@ -66,3 +68,8 @@ gulp.task('istanbul', function (done) {
 });
 
 gulp.task('test', ['lint', 'istanbul']);
+
+// Vendors
+gulp.task('vendors', function () {
+    return bower(paths.vendors);
+});

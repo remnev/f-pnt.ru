@@ -1,0 +1,8 @@
+{
+  "name": "f-pnt.ru",
+  "private": true,
+  "dependencies": {
+    "bem-core": "2.5.0",
+    "bem-components": "1.42.0"
+  }
+}
