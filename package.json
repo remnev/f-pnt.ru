@@ -4,9 +4,9 @@
   "private": true,
   "dependencies": {
     "keystone": "~0.2.32",
-    "async": "~0.9.0",
-    "underscore": "~1.7.0",
-    "dotenv": "0.4.0" 
+    "dotenv": "0.4.0",
+    "express-bem": "1.0.1",
+    "express-bem-bh": "1.1.0"
   },
   "devDependencies": {
     "gulp": "3.8.10",
@@ -29,7 +29,7 @@
     "npm": ">=1.3.14"
   },
   "scripts": {
-    "start": "node keystone.js"
+    "start": "node index.js"
   },
-  "main": "keystone.js"
+  "main": "index.js"
 }

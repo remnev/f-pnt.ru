@@ -102,7 +102,7 @@ module.exports = function (config) {
             [
                 techs.bhServer,
                 {
-                    target: '?.server.bh',
+                    target: '?.server.bh.js',
                     sourceSuffixes: ['bh', 'bh.js'],
                     jsAttrName: 'data-bem',
                     jsAttrScheme: 'json'
@@ -154,7 +154,7 @@ module.exports = function (config) {
 
         nodeConfig.addTargets([
             //  server (bh + i18n)
-            '?.server.bh',
+            '?.server.bh.js',
 
             //  browser (js + client bh)
             '_?.browser.js',
