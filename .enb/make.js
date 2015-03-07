@@ -81,7 +81,6 @@ module.exports = function (config) {
                 {
                     target: '?.browser.pure.bh.js',
                     filesTarget: '?.browser.files',
-                    sourceSuffixes: ['bh', 'bh.js'],
                     jsAttrName: 'data-bem',
                     jsAttrScheme: 'json'
                 }
@@ -103,7 +102,6 @@ module.exports = function (config) {
                 techs.bhServer,
                 {
                     target: '?.server.bh.js',
-                    sourceSuffixes: ['bh', 'bh.js'],
                     jsAttrName: 'data-bem',
                     jsAttrScheme: 'json'
                 }
