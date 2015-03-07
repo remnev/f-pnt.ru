@@ -1,0 +1,23 @@
+.plus {
+    width: 100px;
+    margin-left: 30px;
+
+    text-align: center;
+
+    border-radius: 2px;
+    background-color: #eee;
+    box-shadow: 0 1px 1px -1px;
+}
+
+.plus:hover {
+    cursor: pointer;
+
+    background-color: #f2f2f2;
+}
+
+.plus:active {
+    cursor: pointer;
+
+    background-color: #f2f2f2;
+    box-shadow: none;
+}

@@ -9,7 +9,7 @@ require('dotenv').load();
 
 expressBem.bindTo(app);
 expressBem.engine('.server.bh.js', require('../express-bem-bh/lib/engines/bh')({
-    force: false,
+    force: true, // TODO: don't use in production environment
     source: '?.server.bh.js',
     dataKey: 'data'
 }));
@@ -29,10 +29,6 @@ keystone.init({
 });
 
 keystone.import('models');
-
-keystone.set('locals', {
-    bemjson: {block: 'root'}
-});
 
 keystone.set('routes', function (app) {
     app.get('/demo', controllers.demo);

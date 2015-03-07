@@ -5,6 +5,7 @@
   "dependencies": {
     "keystone": "~0.2.32",
     "dotenv": "0.4.0",
+    "glob": "4.3.2",
     "express-bem": "1.0.1",
     "express-bem-bh": "1.1.0"
   },

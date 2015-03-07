@@ -1,0 +1,11 @@
+.header {
+    height: 100px;
+
+    text-align: center;
+
+    color: black;
+    border-bottom: 1px solid #eee;
+
+    font-size: 30px;
+    line-height: 100px;
+}
