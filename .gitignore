@@ -33,3 +33,6 @@ node_modules
 vendors
 
 .enb/tmp
+/bundles/*/*
+!/bundles/*/blocks/
+!/bundles/*/*.server.bemdecl.js
