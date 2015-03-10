@@ -8,7 +8,7 @@ var controllers = require('./controllers');
 require('dotenv').load();
 
 expressBem.bindTo(app);
-expressBem.engine('.server.bh.js', require('../express-bem-bh/lib/engines/bh')({
+expressBem.engine('.server.bh.js', require('express-bem-bh/lib/engines/bh')({
     force: true, // TODO: don't use in production environment
     source: '?.server.bh.js',
     dataKey: 'data'
