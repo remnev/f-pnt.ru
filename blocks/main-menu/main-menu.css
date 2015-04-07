@@ -1,0 +1,24 @@
+.main-menu {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 90px;
+    margin-top: 27px;
+    vertical-align: top;
+}
+
+.main-menu .link {
+    color: #d17d80;
+    text-decoration: none;
+    margin-right: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.main-menu .link:hover {
+    color: #b80005;
+}
+
+.main-menu .link_active {
+    color: #b80005;
+    font-weight: bold;
+}

@@ -30,6 +30,12 @@ keystone.init({
 
 keystone.import('models');
 
+keystone.pre('routes', function (req, res, next) {
+    res.locals.urlPath = req.path;
+
+    next();
+});
+
 keystone.set('routes', function (app) {
     app.get('/demo', controllers.demo);
 });
