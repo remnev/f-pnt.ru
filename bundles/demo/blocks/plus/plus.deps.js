@@ -5,4 +5,4 @@
             elem: 'channels'
         }
     ]
-})
+});

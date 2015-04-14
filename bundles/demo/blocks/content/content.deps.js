@@ -3,4 +3,4 @@
         {block: 'tasks'},
         {block: 'plus'}
     ]
-})
+});

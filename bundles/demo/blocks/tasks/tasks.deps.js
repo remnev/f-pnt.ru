@@ -17,4 +17,4 @@
     shouldDeps: [
         {elem: 'task'}
     ]
-}])
+}]);
