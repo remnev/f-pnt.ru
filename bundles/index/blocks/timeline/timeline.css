@@ -1,0 +1,105 @@
+.timeline {
+    background-color: #ffffff;
+    width: 390px;
+    min-height: 490px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    opacity: 0.9;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-top: 15px;
+}
+
+.timeline__year {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #b2b2b2;
+    vertical-align: top;
+    position: relative;
+}
+
+.timeline__yearTitle {
+    border-right: 1px solid black;
+    width: 33px;
+    line-height: 20px;
+    width: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.timeline__event {
+    position: absolute;
+    left: 80px;
+    top: 0px;
+}
+
+.timeline .link {
+    color: #b80005;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.timeline .link:hover {
+    color: #b80005;
+}
+
+.timeline__year_has-event {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #000;
+}
+
+.timeline__year_has-event .timeline__yearTitle {
+
+}
+
+.timeline__year_has-event .timeline__yearTitle:before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 3px;
+    right: 10px;
+    top: 7px;
+    border-radius: 50%;
+}
+
+.timeline__year_has-event .timeline__yearTitle:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 0px;
+    right: 0px;
+    bottom: 11px;
+    border-top: 1px solid;
+}
+
+.timeline__year_has-event:first-child .timeline__yearTitle {
+    border-right: none;
+}
+
+.timeline__year_has-event:first-child .timeline__yearTitle:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 11px;
+    right: -1px;
+    bottom: 0;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+/*.timeline__year_has-event:first-child .timeline__yearTitle:before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 3px;
+    right: 20px;
+    top: 8px;
+    border-radius: 50%;
+}*/
+
+

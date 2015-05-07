@@ -1,0 +1,17 @@
+.content {
+    background-image: url(content.jpg);
+    background-repeat: no-repeat;
+    min-height: 640px;
+    width: 960px;
+    margin: 20px auto 0;
+}
+
+.content__title {
+    font: 30px Arial, sans-serif;
+    color: #fff;
+    margin-left: 12px;
+    margin-top: 20px;
+    width: 508px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+    display: inline-block;
+}
